@@ -1,33 +1,21 @@
-# Define the function again
-def hello():
-    print('Hello World')
-    print('Inside a Function')
+#!/usr/bin/env python3
+# return_text_value() function
+# Author ID: rrpatel51@myseneca.ca
+def return_text_value():
+    name = 'Terry'
+    greeting = 'Good Morning ' + name
+    return greeting
+# return_number_value() function
+def return_number_value():
+    num1 = 10
+    num2 = 5
+    num3 = num1 + num2
+    return num3
+# Main Program
+if __name__ == '__main__':
+    print('python code')
+    text = return_text_value()
+    print(text)
+    number = return_number_value()
+    print(str(number))
 
-# Call the function and assign its return value to a variable
-my_stuff = hello()
-print('Stuff returned from hello():', my_stuff)
-print('The object my_stuff is of type:', type(my_stuff))
-
-# Create a list and use built-in functions and methods
-my_list = [3, 6, 2, 8, 4]
-
-# Get the length of the list
-print('Length of list:', len(my_list))
-
-# Get the maximum value in the list
-print('Max value in list:', max(my_list))
-
-# Append a new value to the list
-my_list.append(10)
-print('List after append:', my_list)
-
-# Sort the list
-my_list.sort()
-print('Sorted list:', my_list)
-# Looping through the list
-for item in my_list:
-    print(f'Item: {item}')
-import os
-os.system('echo "Hello from the OS module"')
-import subprocess
-subprocess.Popen(['echo', 'Hello from subprocess'])
